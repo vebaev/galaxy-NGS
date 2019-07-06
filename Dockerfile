@@ -1,4 +1,4 @@
-# Galaxy - Metagenomics
+# Galaxy - NGS
 
 FROM bgruening/galaxy-ngs-preprocessing:19.01
 
