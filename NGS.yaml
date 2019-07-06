@@ -40,7 +40,7 @@
 api_key: admin
 galaxy_instance: http://localhost:8080
 install_resolver_dependencies: True
-install_tool_dependencies: False
+
 tools:
 - name: ncbi_blast_plus
   owner: devteam
@@ -74,10 +74,6 @@ tools:
   owner: devteam
   tool_panel_section_label: "Visualisation"
 
-- name: collapse_collections
-  owner: nml
-  tool_panel_section_label: "Collection Operations"
-
 - name: newick_display
   owner: dcorreia
   tool_panel_section_label: "Visualisation"
@@ -86,3 +82,107 @@ tools:
   owner: saskia-hiltemann
   tool_panel_section_label: "Visualisation"
 
+- name: trim_galore
+  owner: bgruening
+  tool_panel_section_label: "Quality Control"
+  tool_shed_url: https://toolshed.g2.bx.psu.edu
+
+- name: data_manager_sam_fasta_index_builder
+  owner: devteam
+  tool_panel_section_label: "SAM Tools"
+
+- name: bam_to_sam
+  owner: devteam
+  tool_panel_section_label: "SAM Tools"
+
+- name: sam_to_bam
+  owner: devteam
+  tool_panel_section_label: "SAM Tools"
+
+- name: samtools_bedcov
+  owner: devteam
+  tool_panel_section_label: "SAM Tools"
+
+- name: samtools_calmd
+  owner: devteam
+  tool_panel_section_label: "SAM Tools"
+
+- name: samtools_flagstat
+  owner: devteam
+  tool_panel_section_label: "SAM Tools"
+
+- name: samtools_idxstats
+  owner: devteam
+  tool_panel_section_label: "SAM Tools"
+
+- name: samtools_mpileup
+  owner: devteam
+  tool_panel_section_label: "SAM Tools"
+
+- name: samtools_reheader
+  owner: devteam
+  tool_panel_section_label: "SAM Tools"
+
+- name: samtools_rmdup
+  owner: devteam
+  tool_panel_section_label: "SAM Tools"
+
+- name: samtools_slice_bam
+  owner: devteam
+  tool_panel_section_label: "SAM Tools"
+
+- name: samtools_sort
+  owner: devteam
+  tool_panel_section_label: "SAM Tools"
+
+- name: samtools_split
+  owner: devteam
+  tool_panel_section_label: "SAM Tools"
+
+- name: samtools_stats
+  owner: devteam
+  tool_panel_section_label: "SAM Tools"
+
+- name: deseq2
+  owner: iuc
+  tool_panel_section_label: "RNA-Seq"
+
+- name: data_manager_hisat2_index_builder
+  owner: iuc
+  tool_panel_section_label: "RNA-Seq"
+
+- name: hisat2
+  owner: iuc
+  tool_panel_section_label: "RNA-Seq"
+
+- name: trinity
+  owner: iuc
+  tool_panel_section_label: "RNA-Seq"
+
+- name: sailfish
+  owner: bgruening
+  tool_panel_section_label: "RNA-Seq"
+
+- name: deseq2
+  owner: iuc
+  tool_panel_section_label: "RNA-Seq"
+
+- name: salmon
+  owner: bgruening
+  tool_panel_section_label: "RNA-Seq"
+
+- name: featurecounts
+  owner: iuc
+  tool_panel_section_label: "RNA-Seq"
+
+- name: rgrnastar
+  owner: iuc
+  tool_panel_section_label: "RNA-Seq"
+
+- name: data_manager_star_index_builder
+  owner: iuc
+  tool_panel_section_label: "RNA-Seq"
+
+- name: star_fusion
+  owner: iuc
+  tool_panel_section_label: "RNA-Seq"
