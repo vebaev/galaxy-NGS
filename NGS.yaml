@@ -196,7 +196,7 @@ tools:
   owner: bebatut
   tool_panel_section_label: "Visualisation"
   
-- name: msp_sr_size_histograms
+- name: msp_sr_readmap_and_size_histograms
   owner: drosofff
   tool_panel_section_label: "Visualisation"
   
