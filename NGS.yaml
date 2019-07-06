@@ -84,64 +84,64 @@ tools:
 
 - name: trim_galore
   owner: bgruening
-  tool_panel_section_label: "Quality Control"
+  tool_panel_section_label: "NGS pre-processing tools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
 
 - name: data_manager_sam_fasta_index_builder
   owner: devteam
-  tool_panel_section_label: "SAM Tools"
+  tool_panel_section_label: "NGS SAM/BAM tools"
 
 - name: bam_to_sam
   owner: devteam
-  tool_panel_section_label: "SAM Tools"
+  tool_panel_section_label: "NGS SAM/BAM tools"
 
 - name: sam_to_bam
   owner: devteam
-  tool_panel_section_label: "SAM Tools"
+  tool_panel_section_label: "NGS SAM/BAM tools"
 
 - name: samtools_bedcov
   owner: devteam
-  tool_panel_section_label: "SAM Tools"
+  tool_panel_section_label: "NGS SAM/BAM tools"
 
 - name: samtools_calmd
   owner: devteam
-  tool_panel_section_label: "SAM Tools"
+  tool_panel_section_label: "NGS SAM/BAM tools"
 
 - name: samtools_flagstat
   owner: devteam
-  tool_panel_section_label: "SAM Tools"
+  tool_panel_section_label: "NGS SAM/BAM tools"
 
 - name: samtools_idxstats
   owner: devteam
-  tool_panel_section_label: "SAM Tools"
+  tool_panel_section_label: "NGS SAM/BAM tools"
 
 - name: samtools_mpileup
   owner: devteam
-  tool_panel_section_label: "SAM Tools"
+  tool_panel_section_label: "NGS SAM/BAM tools"
 
 - name: samtools_reheader
   owner: devteam
-  tool_panel_section_label: "SAM Tools"
+  tool_panel_section_label: "NGS SAM/BAM tools"
 
 - name: samtools_rmdup
   owner: devteam
-  tool_panel_section_label: "SAM Tools"
+  tool_panel_section_label: "NGS SAM/BAM tools"
 
 - name: samtools_slice_bam
   owner: devteam
-  tool_panel_section_label: "SAM Tools"
+  tool_panel_section_label: "NGS SAM/BAM tools"
 
 - name: samtools_sort
   owner: devteam
-  tool_panel_section_label: "SAM Tools"
+  tool_panel_section_label: "NGS SAM/BAM tools"
 
 - name: samtools_split
   owner: devteam
-  tool_panel_section_label: "SAM Tools"
+  tool_panel_section_label: "NGS SAM/BAM tools"
 
 - name: samtools_stats
   owner: devteam
-  tool_panel_section_label: "SAM Tools"
+  tool_panel_section_label: "NGS SAM/BAM tools"
 
 - name: deseq2
   owner: iuc
