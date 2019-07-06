@@ -42,84 +42,12 @@ galaxy_instance: http://localhost:8080
 install_resolver_dependencies: True
 install_tool_dependencies: False
 tools:
-- name: diamond
-  owner: bgruening
-  tool_panel_section_label: "Similarity Search"
-
-- name: blastxml_to_top_descr
-  owner: peterjc
-  tool_panel_section_label: "Similarity Search"
-
-- name: blast_rbh
-  owner: peterjc
-  tool_panel_section_label: "Similarity Search"
-
 - name: ncbi_blast_plus
   owner: devteam
-  tool_panel_section_label: "Similarity Search"
-
-- name: vsearch
-  owner: iuc
-  tool_panel_section_label: "Similarity Search"
-
-- name: vegan_diversity
-  owner: iuc
-  tool_panel_section_label: "Vegan"
-
-- name: vegan_fisher_alpha
-  owner: iuc
-  tool_panel_section_label: "Vegan"
-
-- name: vegan_rarefaction
-  owner: iuc
-  tool_panel_section_label: "Vegan"
-
-- name: suite_kraken_0_10_5
-  owner: devteam
-  tool_panel_section_label: "Similarity Search"
-
-- name: cd_hit_dup
-  owner: devteam
-  tool_panel_section_label: "Similarity Search"
-
-- name: gi2taxonomy
-  owner: devteam
-  tool_panel_section_label: "Similarity Search"
-
-- name: clustalw
-  owner: devteam
-  tool_panel_section_label: "Sequence Clustering"
+  tool_panel_section_label: "BLAST"
 
 - name: fasta_compute_length
   owner: devteam
-  tool_panel_section_label: "FASTA Tools"
-
-- name: emboss_5
-  owner: devteam
-  tool_panel_section_label: "EMBOSS"
-
-- name: fasta_merge_files_and_filter_unique_sequences
-  owner: galaxyp
-  tool_panel_section_label: "FASTA Tools"
-
-- name: seq_filter_by_id
-  owner: peterjc
-  tool_panel_section_label: "FASTA Tools"
-
-- name: seq_rename
-  owner: peterjc
-  tool_panel_section_label: "FASTA Tools"
-
-- name: seq_select_by_id
-  owner: peterjc
-  tool_panel_section_label: "FASTA Tools"
-
-- name: get_orfs_or_cdss
-  owner: peterjc
-  tool_panel_section_label: "FASTA Tools"
-
-- name: get_orfs_or_cdss
-  owner: peterjc
   tool_panel_section_label: "FASTA Tools"
 
 - name: fasta_formatter
@@ -138,21 +66,9 @@ tools:
   owner: devteam
   tool_panel_section_label: "FASTA Tools"
 
-- name: find_subsequences
-  owner: bgruening
-  tool_panel_section_label: "FASTA Tools"
-
-- name: commet
-  owner: cmonjeau
-  tool_panel_section_label: "Sequence Clustering"
-
-- name: clustalomega
-  owner: clustalomega
-  tool_panel_section_label: "Sequence Clustering"
-
 - name: suite_mothur
   owner: iuc
-  tool_panel_section_label: "Mothur"
+  tool_panel_section_label: "NGS 16s Mothur"
 
 - name: xy_plot
   owner: devteam
@@ -170,9 +86,3 @@ tools:
   owner: saskia-hiltemann
   tool_panel_section_label: "Visualisation"
 
-- name: suite_qiime
-  owner: iuc
-  tool_panel_section_label: "Qiime"
-
-- name: data_manager_qiime_database_downloader
-  owner: iuc
