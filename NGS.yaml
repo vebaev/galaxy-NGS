@@ -225,9 +225,9 @@ tools:
   owner: iuc
   tool_panel_section_label: "NGS pre-processing tools"
   
- - name: fastx_collapser
-   owner: devteam
-   tool_panel_section_label: "NGS pre-processing tools"
+- name: fastx_collapser
+  owner: devteam
+  tool_panel_section_label: "NGS pre-processing tools"
   
 - name: data_manager_sam_fasta_index_builder
   owner: devteam
