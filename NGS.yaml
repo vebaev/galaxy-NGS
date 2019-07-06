@@ -44,13 +44,21 @@ install_tool_dependencies: False
 
 tools:
 
+- name: sra_toola
+  owner: iuc
+  tool_panel_section_label: "Get Data"
+  
+- name: text_processing
+  owner: bgruening
+  tool_panel_section_label: "Text Manipulation"
+  
 - name: fastqc
   owner: devteam
-  tool_panel_section_label: "Quality Control"
+  tool_panel_section_label: "NGS Quality Control"
 
 - name: multiqc
   owner: iuc
-  tool_panel_section_label: "Quality Control"
+  tool_panel_section_label: "NGS Quality Control"
   
 - name: bowtie2
   owner: devteam
@@ -74,9 +82,12 @@ tools:
 - name: data_manager_fetch_genome_dbkeys_all_fasta
   owner: devteam
 
+- name: data_manager_bowtie_index_builder
+  owner: iuc
+
 - name: data_manager_bwa_mem_index_builder
   owner: devteam
-
+  
 - name: deeptools_bigwig_compare
   owner: bgruening
   tool_panel_section_label: "NGS deepTools"
@@ -194,6 +205,10 @@ tools:
   tool_panel_section_label: "NGS pre-processing tools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
   
+- name: cutadapt
+  owner: lparsons
+  tool_panel_section_label: "NGS pre-processing tools"
+  
 - name: fastx_collapser
    owner: devteam
    tool_panel_section_label: "NGS pre-processing tools"
@@ -285,7 +300,7 @@ tools:
 - name: hisat2
   owner: iuc
   tool_panel_section_label: "NGS RNA-seq"
-
+  
 - name: trinity
   owner: iuc
   tool_panel_section_label: "NGS RNA-seq"
@@ -330,10 +345,7 @@ tools:
   owner: iuc
   tool_panel_section_label: "NGS Assembly"
   
-- name: text_processing
-  owner: bgruening
-  tool_panel_section_label: "Text Manipulation"
-  
-- name: sra_toola
+- name: goseq
   owner: iuc
-  tool_panel_section_label: "Get Data"
+  tool_panel_section_label: "NGS GO analysis"
+
