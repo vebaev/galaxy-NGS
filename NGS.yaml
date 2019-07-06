@@ -40,12 +40,9 @@
 api_key: admin
 galaxy_instance: http://localhost:8080
 install_resolver_dependencies: True
+install_tool_dependencies: False
 
 tools:
-
-- name: bowtie2
-  owner: devteam
-  tool_panel_section_label: "NGS Mapping"
 
 - name: fastqc
   owner: devteam
@@ -54,9 +51,21 @@ tools:
 - name: multiqc
   owner: iuc
   tool_panel_section_label: "Quality Control"
+  
+- name: bowtie2
+  owner: devteam
+  tool_panel_section_label: "NGS Mapping"
 
 - name: bwa
   owner: devteam
+  tool_panel_section_label: "NGS Mapping"
+  
+- name: bowtie_wrappers
+  owner: devteam
+  tool_panel_section_label: "NGS Mapping"
+  
+- name: msp_sr_bowtie
+  owner: drosofff
   tool_panel_section_label: "NGS Mapping"
 
 - name: data_manager_bowtie2_index_builder
@@ -172,11 +181,39 @@ tools:
   owner: saskia-hiltemann
   tool_panel_section_label: "Visualisation"
 
+- name: plot_barplot
+  owner: bebatut
+  tool_panel_section_label: "Visualisation"
+  
+- name: msp_sr_size_histograms
+  owner: drosofff
+  tool_panel_section_label: "Visualisation"
+  
 - name: trim_galore
   owner: bgruening
   tool_panel_section_label: "NGS pre-processing tools"
   tool_shed_url: https://toolshed.g2.bx.psu.edu
-
+  
+- name: fastx_collapser
+   owner: devteam
+   tool_panel_section_label: "NGS pre-processing tools"
+  
+- name: fastq_collapser
+   owner: kaymccoy
+   tool_panel_section_label: "NGS pre-processing tools"
+   
+- name: fastx_clipper
+   owner: devteam
+   tool_panel_section_label: "NGS pre-processing tools"
+   
+- name: pear
+  owner: iuc
+  tool_panel_section_label: "NGS pre-processing tools"
+  
+ - name: fastx_collapser
+   owner: devteam
+   tool_panel_section_label: "NGS pre-processing tools"
+  
 - name: data_manager_sam_fasta_index_builder
   owner: devteam
   tool_panel_section_label: "NGS SAM/BAM tools"
@@ -235,44 +272,68 @@ tools:
 
 - name: deseq2
   owner: iuc
-  tool_panel_section_label: "RNA-Seq"
+  tool_panel_section_label: "NGS RNA-seq"
+  
+- name: htseq_count
+  owner: lparsons
+  tool_panel_section_label: "NGS RNA-seq"
 
 - name: data_manager_hisat2_index_builder
   owner: iuc
-  tool_panel_section_label: "RNA-Seq"
+  tool_panel_section_label: "NGS RNA-seq"
 
 - name: hisat2
   owner: iuc
-  tool_panel_section_label: "RNA-Seq"
+  tool_panel_section_label: "NGS RNA-seq"
 
 - name: trinity
   owner: iuc
-  tool_panel_section_label: "RNA-Seq"
+  tool_panel_section_label: "NGS RNA-seq"
 
 - name: sailfish
   owner: bgruening
-  tool_panel_section_label: "RNA-Seq"
+  tool_panel_section_label: "NGS RNA-seq"
 
 - name: deseq2
   owner: iuc
-  tool_panel_section_label: "RNA-Seq"
+  tool_panel_section_label: "NGS RNA-seq"
 
 - name: salmon
   owner: bgruening
-  tool_panel_section_label: "RNA-Seq"
+  tool_panel_section_label: "NGS RNA-seq"
 
 - name: featurecounts
   owner: iuc
-  tool_panel_section_label: "RNA-Seq"
+  tool_panel_section_label: "NGS RNA-seq"
 
 - name: rgrnastar
   owner: iuc
-  tool_panel_section_label: "RNA-Seq"
+  tool_panel_section_label: "NGS RNA-seq"
 
 - name: data_manager_star_index_builder
   owner: iuc
-  tool_panel_section_label: "RNA-Seq"
+  tool_panel_section_label: "NGS RNA-seq"
 
 - name: star_fusion
   owner: iuc
-  tool_panel_section_label: "RNA-Seq"
+  tool_panel_section_label: "NGS RNA-seq"
+  
+- name: velvet
+  owner: devteam
+  tool_panel_section_label: "NGS Assembly"
+ 
+- name: velvetoptimiser
+  owner: simon-gladman
+  tool_panel_section_label: "NGS Assembly"
+  
+- name: quast
+  owner: iuc
+  tool_panel_section_label: "NGS Assembly"
+  
+- name: text_processing
+  owner: bgruening
+  tool_panel_section_label: "Text Manipulation"
+  
+- name: sra_toola
+  owner: iuc
+  tool_panel_section_label: "Get Data"
