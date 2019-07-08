@@ -332,6 +332,10 @@ tools:
 - name: star_fusion
   owner: iuc
   tool_panel_section_label: "NGS RNA-seq"
+
+- name: blockclust
+  owner: rnateam
+  tool_panel_section_label: "NGS RNA-seq"
   
 - name: velvet
   owner: devteam
