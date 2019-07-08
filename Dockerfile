@@ -1,6 +1,6 @@
 # Galaxy - NGS
 
-FROM bgruening/galaxy-stable
+FROM bgruening/galaxy-stable:19.01
 
 MAINTAINER Björn A. Grüning, bjoern.gruening@gmail.com
 
