@@ -41,7 +41,7 @@ Requirements
 
 Credits
 ============
-Many thanks Saskia Hiltemann!
+Many thanks Saskia Hiltemann! and of course Björn Grüning for the Galaxy-Docker!
 
 
 Contacts
