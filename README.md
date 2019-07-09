@@ -46,7 +46,7 @@ Many thanks Saskia Hiltemann! and of course Björn Grüning for the Galaxy-Docke
 
 Contacts
 ============
-Vesselin Baev vebaev@plantgene.eu
+Vesselin Baev vebaev@plantgene.eu, University of Plovdiv. BG
 
 
 Licence (MIT)
