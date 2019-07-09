@@ -210,16 +210,16 @@ tools:
   tool_panel_section_label: "NGS pre-processing tools"
   
 - name: fastx_collapser
-   owner: devteam
-   tool_panel_section_label: "NGS pre-processing tools"
+  owner: devteam
+  tool_panel_section_label: "NGS pre-processing tools"
   
 - name: fastq_collapser
-   owner: kaymccoy
-   tool_panel_section_label: "NGS pre-processing tools"
+  owner: kaymccoy
+  tool_panel_section_label: "NGS pre-processing tools"
    
 - name: fastx_clipper
-   owner: devteam
-   tool_panel_section_label: "NGS pre-processing tools"
+  owner: devteam
+  tool_panel_section_label: "NGS pre-processing tools"
    
 - name: pear
   owner: iuc
