@@ -48,8 +48,16 @@ tools:
   owner: iuc
   tool_panel_section_id: 'getext'
   
+- name: fetch_fasta_from_ncbi
+  owner: drosofff
+  tool_panel_section_id: 'getext'
+  
 - name: text_processing
   owner: bgruening
+  tool_panel_section_id: 'textutil'
+  
+- name: regex_find_replace
+  owner: jjohnson
   tool_panel_section_id: 'textutil'
   
 - name: ncbi_blast_plus
@@ -131,14 +139,6 @@ tools:
 
 - name: data_manager_bwa_mem_index_builder
   owner: devteam
-
-- name: bedtools
-  owner: iuc
-  tool_panel_section_label: "NGS BED Tools"
-
-- name: suite_mothur
-  owner: iuc
-  tool_panel_section_label: "NGS 16s Mothur"
   
 - name: trim_galore
   owner: bgruening
@@ -236,6 +236,14 @@ tools:
 - name: samtools_stats
   owner: devteam
   tool_panel_section_label: "NGS SAM/BAM tools"
+  
+- name: bedtools
+  owner: iuc
+  tool_panel_section_label: "NGS BED Tools"
+
+- name: suite_mothur
+  owner: iuc
+  tool_panel_section_label: "NGS 16s Mothur"
 
 - name: deseq2
   owner: iuc
@@ -304,4 +312,7 @@ tools:
 - name: goseq
   owner: iuc
   tool_panel_section_label: "NGS GO analysis"
-
+  
+- name: varscan_version_2
+  owner: devteam
+  tool_panel_section_label: "Variant Analysis"
