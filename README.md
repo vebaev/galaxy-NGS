@@ -1,4 +1,7 @@
 
+[![Docker Repository on Quay](https://quay.io/repository/vebaev/galaxy-ngs/status "Docker Repository on Quay")](https://quay.io/repository/vebaev/galaxy-ngs)
+
+
 Galaxy Workbench for NGS Analysis
 =================================
 
