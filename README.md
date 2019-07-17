@@ -7,6 +7,9 @@ Galaxy Workbench for NGS Analysis
 
 :whale: Galaxy Docker repository for RNA-seq, smallRNA-seq and Metagenomics (Galaxy flavour)
 
+In folder ``/congif`` file ``job_conf.xml`` is preconfigured for some tools to use multi-core resources - 16CPU (--ntasks=16).
+
+
 Usage
 =====
 At first you need to install docker. Please follow the instruction on https://docs.docker.com/installation/
