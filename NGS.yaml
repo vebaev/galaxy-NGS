@@ -60,6 +60,10 @@ tools:
   owner: jjohnson
   tool_panel_section_id: 'textutil'
   
+- name: collapse_collections
+  owner: nml
+  tool_panel_section_id: 'collection_operations'
+  
 - name: ncbi_blast_plus
   owner: devteam
   tool_panel_section_label: "BLAST"
@@ -95,6 +99,10 @@ tools:
 - name: krona_text
   owner: saskia-hiltemann
   tool_panel_section_label: "Visualisation"
+  
+- name: ireport
+  owner: saskia-hiltemann
+  tool_panel_section_label: "Visualisation"
 
 - name: plot_barplot
   owner: bebatut
@@ -102,6 +110,14 @@ tools:
   
 - name: msp_sr_readmap_and_size_histograms
   owner: drosofff
+  tool_panel_section_label: "Visualisation"
+  
+- name: newick_utils
+  owner: iuc
+  tool_panel_section_label: "Visualisation"
+  
+- name: taxonomy_krona_chart
+  owner: crs4
   tool_panel_section_label: "Visualisation"
   
 - name: fastqc
