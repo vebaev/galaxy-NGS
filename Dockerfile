@@ -9,9 +9,13 @@ ENV GALAXY_CONFIG_BRAND="Galaxy NGS" \
     GALAXY_CONFIG_CONDA_AUTO_INSTALL=True
 
 # Install tools
-COPY NGS.yaml $GALAXY_ROOT/tools.yaml
+COPY NGS_1.yaml $GALAXY_ROOT/tools_1.yaml
+COPY NGS_2.yaml $GALAXY_ROOT/tools_2.yaml
 
-RUN install-tools $GALAXY_ROOT/tools.yaml && \
+RUN install-tools $GALAXY_ROOT/tools_1.yaml && \
+    /tool_deps/_conda/bin/conda clean --all --yes
+    
+RUN install-tools $GALAXY_ROOT/tools_2.yaml && \
     /tool_deps/_conda/bin/conda clean --all --yes
 
 
