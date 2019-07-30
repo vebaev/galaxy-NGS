@@ -4,10 +4,23 @@ FROM bgruening/galaxy-stable:19.01
 
 MAINTAINER Vesselin Baev, vebaev@plantgene.eu
 
-ENV GALAXY_CONFIG_BRAND NGS_Analysis
+# Enable Conda dependency resolution
+ENV GALAXY_CONFIG_BRAND="Galaxy NGS" \
+    GALAXY_CONFIG_CONDA_AUTO_INSTALL=True
 
 # Install tools
 COPY NGS.yaml $GALAXY_ROOT/tools.yaml
 
 RUN install-tools $GALAXY_ROOT/tools.yaml && \
     /tool_deps/_conda/bin/conda clean --all --yes
+
+
+# Add Container Style
+ENV GALAXY_CONFIG_WELCOME_URL=$GALAXY_CONFIG_DIR/web/welcome.html
+COPY config/welcome.html $GALAXY_CONFIG_DIR/web/welcome.html
+COPY config/welcome_NGS.png $GALAXY_CONFIG_DIR/web/welcome_asaim_logo.svg
+
+
+# Add Multi CPU job_conf file (--ntasks=16)
+ENV GALAXY_CONFIG_JOB_CONFIG_FILE=$GALAXY_CONFIG_DIR/job_conf.xml
+COPY config/job_conf.xml $GALAXY_CONFIG_DIR/job_conf.xml
