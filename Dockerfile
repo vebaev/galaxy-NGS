@@ -2,7 +2,7 @@
 
 FROM bgruening/galaxy-stable:19.01
 
-MAINTAINER Björn A. Grüning, bjoern.gruening@gmail.com
+MAINTAINER Vesselin Baev, vebaev@plantgene.eu
 
 ENV GALAXY_CONFIG_BRAND NGS_Analysis
 
