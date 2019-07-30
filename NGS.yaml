@@ -149,6 +149,10 @@ tools:
   owner: lparsons
   tool_panel_section_label: "NGS pre-processing tools"
   
+- name: trimmomatic
+  owner: pjbriggs
+  tool_panel_section_label: "NGS pre-processing tools"
+  
 - name: fastx_collapser
   owner: devteam
   tool_panel_section_label: "NGS pre-processing tools"
@@ -247,6 +251,9 @@ tools:
 
 - name: deseq2
   owner: iuc
+  revisions:
+  - 0696db066a5b
+  - 24a09ca67621
   tool_panel_section_label: "NGS RNA-seq"
   
 - name: htseq_count
@@ -267,10 +274,6 @@ tools:
 
 - name: sailfish
   owner: bgruening
-  tool_panel_section_label: "NGS RNA-seq"
-
-- name: deseq2
-  owner: iuc
   tool_panel_section_label: "NGS RNA-seq"
 
 - name: salmon
