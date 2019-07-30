@@ -12,11 +12,16 @@ ENV GALAXY_CONFIG_BRAND="Galaxy NGS" \
 COPY NGS_1.yaml $GALAXY_ROOT/tools_1.yaml
 COPY NGS_2.yaml $GALAXY_ROOT/tools_2.yaml
 
-RUN install-tools $GALAXY_ROOT/tools_1.yaml && \
-    /tool_deps/_conda/bin/conda clean --all --yes
-    
-RUN install-tools $GALAXY_ROOT/tools_2.yaml && \
-    /tool_deps/_conda/bin/conda clean --all --yes
+RUN df -h && \
+    install-tools $GALAXY_ROOT/tools_1.yaml && \
+    /tool_deps/_conda/bin/conda clean --tarballs --yes && \
+    rm -rf /tool_deps/_conda/pkgs && \
+    df -h
+RUN df -h && \
+    install-tools $GALAXY_ROOT/tools_2.yaml && \
+    /tool_deps/_conda/bin/conda clean --tarballs --yes && \
+    rm -rf /tool_deps/_conda/pkgs && \
+    df -h
 
 
 # Add Container Style
