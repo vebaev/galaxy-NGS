@@ -27,7 +27,7 @@ RUN df -h && \
 # Add Container Style
 ENV GALAXY_CONFIG_WELCOME_URL=$GALAXY_CONFIG_DIR/web/welcome.html
 COPY config/welcome.html $GALAXY_CONFIG_DIR/web/welcome.html
-COPY config/welcome_NGS.png $GALAXY_CONFIG_DIR/web/welcome_asaim_logo.svg
+COPY config/welcome_NGS.png $GALAXY_CONFIG_DIR/web/welcome_NGS.png
 
 
 # Add Multi CPU job_conf file (--ntasks=16)
