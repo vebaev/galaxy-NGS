@@ -165,6 +165,10 @@ tools:
   owner: lparsons
   tool_panel_section_label: "NGS pre-processing tools"
   
+- name: trimmomatic
+  owner: pjbriggs
+  tool_panel_section_label: "NGS pre-processing tools"
+  
 - name: fastx_collapser
   owner: devteam
   tool_panel_section_label: "NGS pre-processing tools"
@@ -260,9 +264,12 @@ tools:
 - name: suite_mothur
   owner: iuc
   tool_panel_section_label: "NGS 16s Mothur"
-
+  
 - name: deseq2
   owner: iuc
+  revisions:
+  - 0696db066a5b
+  - 24a09ca67621
   tool_panel_section_label: "NGS RNA-seq"
   
 - name: htseq_count
@@ -285,50 +292,6 @@ tools:
   owner: bgruening
   tool_panel_section_label: "NGS RNA-seq"
 
-- name: deseq2
-  owner: iuc
-  tool_panel_section_label: "NGS RNA-seq"
-
 - name: salmon
   owner: bgruening
   tool_panel_section_label: "NGS RNA-seq"
-
-- name: featurecounts
-  owner: iuc
-  tool_panel_section_label: "NGS RNA-seq"
-
-- name: rgrnastar
-  owner: iuc
-  tool_panel_section_label: "NGS RNA-seq"
-
-- name: data_manager_star_index_builder
-  owner: iuc
-  tool_panel_section_label: "NGS RNA-seq"
-
-- name: star_fusion
-  owner: iuc
-  tool_panel_section_label: "NGS RNA-seq"
-
-- name: blockclust
-  owner: rnateam
-  tool_panel_section_label: "NGS RNA-seq"
-  
-- name: velvet
-  owner: devteam
-  tool_panel_section_label: "NGS Assembly"
- 
-- name: velvetoptimiser
-  owner: simon-gladman
-  tool_panel_section_label: "NGS Assembly"
-  
-- name: quast
-  owner: iuc
-  tool_panel_section_label: "NGS Assembly"
-  
-- name: goseq
-  owner: iuc
-  tool_panel_section_label: "NGS GO analysis"
-  
-- name: varscan_version_2
-  owner: devteam
-  tool_panel_section_label: "Variant Analysis"

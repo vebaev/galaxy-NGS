@@ -2,12 +2,34 @@
 
 FROM bgruening/galaxy-stable:19.01
 
-MAINTAINER Björn A. Grüning, bjoern.gruening@gmail.com
+MAINTAINER Vesselin Baev, vebaev@plantgene.eu
 
-ENV GALAXY_CONFIG_BRAND NGS_Analysis
+# Enable Conda dependency resolution
+ENV GALAXY_CONFIG_BRAND="Galaxy NGS" \
+    GALAXY_CONFIG_CONDA_AUTO_INSTALL=True
 
 # Install tools
-COPY NGS.yaml $GALAXY_ROOT/tools.yaml
+COPY NGS_1.yaml $GALAXY_ROOT/tools_1.yaml
+COPY NGS_2.yaml $GALAXY_ROOT/tools_2.yaml
 
-RUN install-tools $GALAXY_ROOT/tools.yaml && \
-    /tool_deps/_conda/bin/conda clean --all --yes
+RUN df -h && \
+    install-tools $GALAXY_ROOT/tools_1.yaml && \
+    /tool_deps/_conda/bin/conda clean --tarballs --yes && \
+    rm -rf /tool_deps/_conda/pkgs && \
+    df -h
+RUN df -h && \
+    install-tools $GALAXY_ROOT/tools_2.yaml && \
+    /tool_deps/_conda/bin/conda clean --tarballs --yes && \
+    rm -rf /tool_deps/_conda/pkgs && \
+    df -h
+
+
+# Add Container Style
+ENV GALAXY_CONFIG_WELCOME_URL=$GALAXY_CONFIG_DIR/web/welcome.html
+COPY config/welcome.html $GALAXY_CONFIG_DIR/web/welcome.html
+COPY config/welcome_NGS.png $GALAXY_CONFIG_DIR/web/welcome_asaim_logo.svg
+
+
+# Add Multi CPU job_conf file (--ntasks=16)
+ENV GALAXY_CONFIG_JOB_CONFIG_FILE=$GALAXY_CONFIG_DIR/job_conf.xml
+COPY config/job_conf.xml $GALAXY_CONFIG_DIR/job_conf.xml
