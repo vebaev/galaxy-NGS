@@ -35,6 +35,17 @@ With the additional ``-v /home/user/galaxy_storage/:/export/`` parameter, docker
 
 This enables you to have different export folders for different sessions - means real separation of your different projects.
 
+
+By default, Galaxy instances launched with this image will have on-demand access to approximately 3TB of
+reference genomes and indexes. These are the same reference data available on the main Galaxy server.
+This is achieved by connecting to Galaxy's CernVM filesystem (CVMFS) at `data.galaxyproject.org` repository,
+which is geographically distributed among numerous servers.
+The CVMFS capability doesn't add to the size of the Docker image, but when running, CVMFS maintains
+a cache to keep the most recently used data on the local disk.
+
+*Note*: If you want to use on-demand the CVMFS reference genomes and indexes, you must launch Docker as `--privileged`
+
+
 Users & Passwords
 ================
 
