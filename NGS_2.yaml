@@ -62,17 +62,8 @@ tools:
 - name: hisat2
   owner: iuc
   tool_panel_section_label: "NGS RNA-seq"
-  
-- name: trinity
-  owner: iuc
-  tool_panel_section_label: "NGS RNA-seq"
 
 - name: sailfish
   owner: bgruening
   tool_panel_section_label: "NGS RNA-seq"
 
-
-
-
-
-  
