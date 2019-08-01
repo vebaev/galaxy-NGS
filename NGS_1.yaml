@@ -261,6 +261,3 @@ tools:
   owner: iuc
   tool_panel_section_label: "NGS BED Tools"
 
-- name: suite_mothur
-  owner: iuc
-  tool_panel_section_label: "NGS 16s Mothur"

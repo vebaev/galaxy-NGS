@@ -15,17 +15,23 @@ COPY NGS_2.yaml $GALAXY_ROOT/tools_3.yaml
 
 
 # Split into multiple layers
-RUN install-tools $GALAXY_ROOT/tools_1.yaml && \
-    /tool_deps/_conda/bin/conda clean --tarballs --yes > /dev/null && \
-    rm /export/galaxy-central/ -rf
+RUN df -h && \
+    install-tools $GALAXY_ROOT/tools_1.yaml && \
+    /tool_deps/_conda/bin/conda clean --all --yes
+    rm -rf /tool_deps/_conda/pkgs && \
+    df -h
 
-RUN install-tools $GALAXY_ROOT/tools_2.yaml && \
-    /tool_deps/_conda/bin/conda clean --tarballs --yes > /dev/null && \
-    rm /export/galaxy-central/ -rf
+RUN df -h && \ 
+    install-tools $GALAXY_ROOT/tools_2.yaml && \
+    /tool_deps/_conda/bin/conda clean --all --yes
+    rm -rf /tool_deps/_conda/pkgs && \
+    df -h
     
-RUN install-tools $GALAXY_ROOT/tools_3.yaml && \
-    /tool_deps/_conda/bin/conda clean --tarballs --yes > /dev/null && \
-    rm /export/galaxy-central/ -rf
+RUN df -h && \
+    install-tools $GALAXY_ROOT/tools_3.yaml && \
+    /tool_deps/_conda/bin/conda clean --all --yes
+    rm -rf /tool_deps/_conda/pkgs && \
+    df -h
 
 
 # Add Container Style
