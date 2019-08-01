@@ -44,9 +44,6 @@ install_tool_dependencies: False
 
 tools:
 
-- name: suite_mothur
-  owner: iuc
-  tool_panel_section_label: "NGS 16s Mothur"
 
 - name: deseq2
   owner: iuc
