@@ -11,7 +11,7 @@ ENV GALAXY_CONFIG_BRAND="Galaxy NGS" \
 # Install tools
 COPY NGS_1.yaml $GALAXY_ROOT/tools_1.yaml
 COPY NGS_2.yaml $GALAXY_ROOT/tools_2.yaml
-COPY NGS_2.yaml $GALAXY_ROOT/tools_3.yaml
+COPY NGS_3.yaml $GALAXY_ROOT/tools_3.yaml
 
 
 # Split into multiple layers
