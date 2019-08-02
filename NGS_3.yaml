@@ -60,10 +60,6 @@ tools:
   owner: iuc
   tool_panel_section_label: "NGS RNA-seq"
 
-- name: suite_mothur
-  owner: iuc
-  tool_panel_section_label: "NGS 16s Mothur"
-
 - name: velvet
   owner: devteam
   tool_panel_section_label: "NGS Assembly"
