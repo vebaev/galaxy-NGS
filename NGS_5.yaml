@@ -44,10 +44,12 @@ install_tool_dependencies: False
 
 tools:
 
-- name: suite_mothur
-  owner: iuc
-  tool_panel_section_label: "NGS 16s Mothur"
-
-- name: biom_convert
+- name: suite_qiime
   owner: iuc
   tool_panel_section_label: "NGS 16s QIIME"
+  
+- name: data_manager_qiime_database_downloader
+  owner: iuc
+
+
+

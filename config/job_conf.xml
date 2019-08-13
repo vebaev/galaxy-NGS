@@ -220,6 +220,7 @@
         <tool id="flagstat" destination="slurm_cluster_cpu16"/>
         <tool id="deseq2" destination="slurm_cluster_cpu16"/>
         <tool id="featurecounts" destination="slurm_cluster_cpu16"/>
+        <tool id="mothur" destination="slurm_cluster_cpu16"/>
 	</tools>
 	
     <limits>
