@@ -5,7 +5,7 @@
 Galaxy Workbench for NGS Analysis
 =================================
 
-:whale: Galaxy Docker repository for RNA-seq, smallRNA-seq and Metagenomics (Galaxy flavour)
+:whale: Galaxy Docker repository for NGS analysis (Galaxy flavour) - this is a base image containing QC, Pre-processing, Mapping and Transcriptomics tools
 
 In folder ``/config`` file ``job_conf.xml`` is preconfigured for some tools to use multi-core resources - 16CPU (--ntasks=16).
 

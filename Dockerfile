@@ -1,4 +1,4 @@
-# Galaxy NGS
+# Galaxy NGS image 1
 
 FROM bgruening/galaxy-stable:19.01
 
@@ -12,8 +12,6 @@ ENV GALAXY_CONFIG_BRAND="Galaxy NGS" \
 COPY NGS_1.yaml $GALAXY_ROOT/tools_1.yaml
 COPY NGS_2.yaml $GALAXY_ROOT/tools_2.yaml
 COPY NGS_3.yaml $GALAXY_ROOT/tools_3.yaml
-COPY NGS_4.yaml $GALAXY_ROOT/tools_4.yaml
-COPY NGS_5.yaml $GALAXY_ROOT/tools_5.yaml
 
 
 
@@ -35,18 +33,7 @@ RUN df -h && \
     /tool_deps/_conda/bin/conda clean --all --yes && \
     rm -rf /tool_deps/_conda/pkgs && \
     df -h
-    
-RUN df -h && \
-    install-tools $GALAXY_ROOT/tools_4.yaml && \
-    /tool_deps/_conda/bin/conda clean --all --yes && \
-    rm -rf /tool_deps/_conda/pkgs && \
-    df -h
-    
-RUN df -h && \
-    install-tools $GALAXY_ROOT/tools_5.yaml && \
-    /tool_deps/_conda/bin/conda clean --all --yes && \
-    rm -rf /tool_deps/_conda/pkgs && \
-    df -h
+
 
 
 # Add Container Style
