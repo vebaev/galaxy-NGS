@@ -256,10 +256,7 @@ tools:
 - name: samtools_stats
   owner: devteam
   tool_panel_section_label: "NGS SAM/BAM tools"
-  
-- name: bedtools
-  owner: iuc
-  tool_panel_section_label: "NGS BED Tools"
+
   
 
 

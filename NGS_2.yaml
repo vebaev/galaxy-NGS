@@ -44,6 +44,10 @@ install_tool_dependencies: False
 
 tools:
 
+- name: bedtools
+  owner: iuc
+  tool_panel_section_label: "NGS BED Tools"
+
 - name: deseq2
   owner: iuc
   revisions:
