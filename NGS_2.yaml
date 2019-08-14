@@ -75,5 +75,7 @@ tools:
   owner: bgruening
   tool_panel_section_label: "NGS RNA-seq"
 
-
+- name: limma_voom
+  owner: iuc
+  tool_panel_section_label: "NGS RNA-seq"
 
