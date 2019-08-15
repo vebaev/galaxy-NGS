@@ -5,9 +5,19 @@
 Galaxy Workbench for NGS Analysis
 =================================
 
-:whale: Galaxy Docker repository for NGS analysis (Galaxy flavour) - this is a base image containing QC, Pre-processing, Mapping and Transcriptomics tools
+:whale: Galaxy Docker repository for NGS analysis (Galaxy flavour) - this is a base image containing NGS tools for:
+
+  - QC
+  - Pre-processing
+  - Mapping
+  - SAM/BAM/BED manipulations
+  - Transcriptomics tools
+  
+*Note*: For more tools see galaxy-NGSM repo which upgrades more tools on top of this base image. 
+  
 
 In folder ``/config`` file ``job_conf.xml`` is preconfigured for some tools to use multi-core resources - 16CPU (--ntasks=16).
+*Note*: File can be manually installed by user.
 
 
 Usage
