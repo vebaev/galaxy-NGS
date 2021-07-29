@@ -1,8 +1,8 @@
 # Galaxy NGS image 1
 
-FROM bgruening/galaxy-stable:19.01
+FROM bgruening/galaxy-stable:20.05
 
-MAINTAINER Vesselin Baev, vebaev@plantgene.eu
+MAINTAINER Vesselin Baev, baev@uni-plovdiv.bg
 
 # Enable Conda dependency resolution
 ENV GALAXY_CONFIG_BRAND="Galaxy NGS" \
